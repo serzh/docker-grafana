@@ -41,7 +41,7 @@ RUN mv /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.saved
 ADD nginx.conf /etc/nginx/conf.d/grafana.conf
 
 #grafana conf
-ADD config.js /grafana/src/config.js
+ADD config.js /grafana/config.js
 
 #Add runit services
 ADD sv /etc/service 
